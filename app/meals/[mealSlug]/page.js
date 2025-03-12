@@ -10,6 +10,7 @@ export default function MealsDetailPage({ params }) {
   if(!meal) notFound()
 
   meal.instructions = meal.instructions.replace(/\n/g, '<br />')
+
   return (
     <>
       <header className={styles.header}>
