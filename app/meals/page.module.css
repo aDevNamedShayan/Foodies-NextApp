@@ -33,19 +33,28 @@
   text-decoration: none;
 }
 
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .loading {
   text-align: center;
-  animation: loading 1.2s ease-in-out infinite;
+  animation: loading 1.2s ease-in-out alternate infinite;
+  text-wrap: nowrap;
+  overflow: hidden;
 }
 
 @keyframes loading {
   0% {
     color: #e9e9e9;
+    width: 230px;
   }
   50% {
     color: #b89b84;
   }
   100% {
     color: #e9e9e9;
+    width: 254px;
   }
 }
